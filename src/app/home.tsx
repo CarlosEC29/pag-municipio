@@ -1,10 +1,8 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import { Header } from './componentes_contratos/header'
-import { Body } from './componentes_contratos/body'
-import { Footer } from './componentes_contratos/footer'
-
-
+import { Header } from './componentes_home/header'
+import { Body } from './componentes_home/body'
+import { Footer } from './componentes_home/footer'
 export default function Home() {
   return (
     <main>
@@ -12,6 +10,5 @@ export default function Home() {
     <Body/>
     <Footer/>
     </main>
-    
   )
 }

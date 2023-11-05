@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-export const Titulo = () => {
+export const Header = () => {
   return (
     <main>
       <div className='titulo'>pagina principal</div>
