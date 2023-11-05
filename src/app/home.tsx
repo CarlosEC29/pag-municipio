@@ -5,10 +5,13 @@ import { Body } from './componentes_home/body'
 import { Footer } from './componentes_home/footer'
 export default function Home() {
   return (
-    <main>
+    <section>
+      <head>
+        <title>Municio de Hodwart</title>
+      </head>
 	  <Header/>
     <Body/>
     <Footer/>
-    </main>
+    </section>
   )
 }
