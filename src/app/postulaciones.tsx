@@ -1,5 +1,9 @@
 import Image from 'next/image'
 import { Titulo } from './componentes_home/header'
+import styles from './page.module.css'
+import { Header } from './componentes_postulaciones/header'
+import { Body } from './componentes_postulaciones/body'
+import { Footer } from './componentes_postulaciones/footer'
 
 interface TarjetaProps {
   titulo: string;
