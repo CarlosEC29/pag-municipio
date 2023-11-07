@@ -7,9 +7,9 @@ export const Header = () => {
       <header>
         <nav>
           <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="../C:\Users\gonza\Documents\escuela ir\segundo cuatrimestre\tpmunicipio\pag-municipio\src\app\contratos.tsx">Postulaciones</a></li>
+            <li><a href="#">Contrataciones</a></li>
             <li><a href="#" target="blank"></a></li>
             <li><a href="#"
               target="blank"></a></li>
