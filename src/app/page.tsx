@@ -1,20 +1,15 @@
 import Image from 'next/image'
 import '../app/layout'
-import { Header } from './componentes_home/header'
-import { Postulaciones } from './postulaciones'
-
-/*export default function Home() {
-  return (
-    <main>
-	  <Titulo/>
-    </main>
-  )
-}*/
+import { Header } from './componentes_generales/header'
+import { Body } from './componentes_home/body'
+import { Footer } from './componentes_generales/footer'
 
 export default function Home() {
   return (
     <main>
-	  <Postulaciones/>
+	  <Header/>
+    <Body/>
+    <Footer/>
     </main>
   )
 }
