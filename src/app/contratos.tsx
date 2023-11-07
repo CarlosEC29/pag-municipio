@@ -1,22 +1,16 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import {Titulo} from './componentes_home/header'
+import { Header } from './componentes_contratos/header'
+import { Body } from './componentes_contratos/body'
+import { Footer } from './componentes_contratos/footer'
+
 
 export default function Home() {
   return (
     <main>
-      <div> 
-		titulo
-        
-      </div>
-      <div>
-        cuerpo
-
-      </div>
-      <footer>
-        pie de pagina
-
-      </footer>
+	  <Header/>
+    <Body/>
+    <Footer/>
     </main>
     
   )
