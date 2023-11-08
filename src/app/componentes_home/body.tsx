@@ -1,7 +1,9 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import Hodwarts from './hodwarts.jpg'
 import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Body = () => {
   return (
@@ -9,8 +11,8 @@ export const Body = () => {
       <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <Image
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=f5f5f5"
+          className="carrucel"
+          src={Hodwarts}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -20,8 +22,8 @@ export const Body = () => {
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee"
+          className="carrucel"
+          src={Hodwarts}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -31,8 +33,8 @@ export const Body = () => {
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+          className="carrucel"
+          src={Hodwarts}
           alt="Third slide"
         />
         <Carousel.Caption>
