@@ -16,11 +16,6 @@ export const Header = () => {
           </ul>
         </nav>
       </header>
-      <main>
-        <div className="titulo text-white text-center">
-          <h1> Municipio de Hodward </h1>
-        </div>
-      </main>
     </section>
   )
 }

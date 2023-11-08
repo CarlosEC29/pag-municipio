@@ -33,7 +33,11 @@ nav ul li a {
 nav ul li:hover {
   background: #25AED0;
 }
-
+/*foto del carrucel*/
+.carrucel{
+  width: 300px;
+  height: 200px;
+}
 /*aca termina la configuracion visual de la barra */
 .titulo {
   background-color: #C09614;
@@ -51,12 +55,11 @@ h1 {
 }
 
 .finpagina {
-  position: sticky;
-  top: 0;
-  background-color: rgba(219, 63, 48);
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  padding: 30px 20px;
-  height: 100px;
+  height: 60px;
+  background-color: rgba(219, 63, 48);
 }
 
 .tarjeta {
