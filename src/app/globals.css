@@ -35,8 +35,13 @@ nav ul li:hover {
 }
 /*foto del carrucel*/
 .carrucel{
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 250px;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 /*aca termina la configuracion visual de la barra */
 .titulo {
@@ -50,7 +55,7 @@ h1 {
 }
 
 .cuerpo {
-  background-color: rgba(240, 235, 216);
+  background-color: #FFFDD0;;
   padding: 5%;
 }
 
