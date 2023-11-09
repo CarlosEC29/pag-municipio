@@ -1,6 +1,6 @@
 /*cuando baje la pagina se mantiene la barra*/
 header {
-  background: rgba(116, 140, 171);
+  background: rgba(142, 202, 230);
   width: 100%;
   position: fixed;
   z-index: 100;
@@ -31,12 +31,21 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  background: #1D2D44;
+  background: #25AED0;
 }
-
+/*foto del carrucel*/
+.carrucel{
+  width: 350px;
+  height: 250px;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 /*aca termina la configuracion visual de la barra */
 .titulo {
-  background-color: #3E5C76;
+  background-color: #C09614;
   width: 100%;
   height: 150px;
 }
@@ -46,17 +55,16 @@ h1 {
 }
 
 .cuerpo {
-  background-color: rgba(240, 235, 216);
+  background-color: #FFFDD0;;
   padding: 5%;
 }
 
 .finpagina {
-  position: sticky;
-  top: 0;
-  background-color: rgba(62, 92, 118);
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  padding: 40px 20px;
-  height: 100px;
+  height: 60px;
+  background-color: rgba(219, 63, 48);
 }
 
 .tarjeta {
