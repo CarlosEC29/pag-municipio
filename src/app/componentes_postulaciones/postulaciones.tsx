@@ -1,7 +1,5 @@
 'use client';
 
-import imagen1 from 'imagen1.jpg';
-
 interface TarjetaProps {
     titulo: string;
     descripcion: string;
@@ -15,12 +13,12 @@ interface TarjetaProps {
       alert('CV Cargado, muchas gracias!');
     };
     const baseUrlImagenes = '../images/';
-    const dirImagen = baseUrlImagenes + imagen1 ;
+    const dirImagen = baseUrlImagenes  ;
   
     return (
       <div className="tarjeta">
         <h2>{titulo}</h2>
-        <img src={dirImagen} alt="" />
+        <img alt="" />
         <p>{descripcion}</p>
         <button onClick={mostrarMensaje}>Cargar CV</button>
       </div>
