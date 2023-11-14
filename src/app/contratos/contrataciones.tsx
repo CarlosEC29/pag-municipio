@@ -8,10 +8,10 @@ import { Footer } from './componentes_contratos/footer'
 export default function Home() {
   return (
     <main>
-	  <Header/>
-    <Body/>
-    <Footer/>
+      <Header />
+      <Body />
+      <Footer />
     </main>
-    
+
   )
 }

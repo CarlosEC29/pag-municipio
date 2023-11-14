@@ -44,7 +44,7 @@ interface TarjetaProps {
   
     return (
       <div className="App">
-        <h1>Lista de trabajos</h1>
+        <h1>Lista de empleos</h1>
         <ListaDeTarjetas datosTarjetas={tarjetas} />
       </div>
     );
