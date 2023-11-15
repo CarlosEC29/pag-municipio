@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import { Postulaciones } from '../componentes_postulaciones/postulaciones';
-import { Header } from '../componentes_generales/header';
-import { Footer } from '../componentes_generales/footer';
+import { Postulaciones } from '../(componentes)/postulaciones/postulaciones';
+import { Header } from '../(componentes)/generales/header';
+import { Footer } from '../(componentes)/generales/footer';
 import '../globals.css';
 
 export default function Home() {

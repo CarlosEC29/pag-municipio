@@ -33,7 +33,16 @@ nav ul li a {
 nav ul li:hover {
   background: #25AED0;
 }
-
+/*foto del carrucel*/
+.carrucel{
+  width: 350px;
+  height: 250px;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 /*aca termina la configuracion visual de la barra */
 .titulo {
   background-color: #C09614;
@@ -46,17 +55,16 @@ h1 {
 }
 
 .cuerpo {
-  background-color: rgba(240, 235, 216);
+  background-color: #FFFDD0;;
   padding: 5%;
 }
 
 .finpagina {
-  position: sticky;
-  top: 0;
-  background-color: rgba(219, 63, 48);
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  padding: 30px 20px;
-  height: 100px;
+  height: 60px;
+  background-color: rgba(219, 63, 48);
 }
 
 .tarjeta {

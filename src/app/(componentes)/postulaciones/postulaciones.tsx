@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image'
 
 interface TarjetaProps {
     titulo: string;
@@ -6,19 +7,21 @@ interface TarjetaProps {
     imagen: string;
   }
   
-  function Tarjeta({ titulo, descripcion }: TarjetaProps) {
+  function Tarjeta({ titulo, descripcion, imagen }: TarjetaProps) {
 
     
     const mostrarMensaje = () => {
       alert('CV Cargado, muchas gracias!');
     };
-    const baseUrlImagenes = '../images/';
-    const dirImagen = baseUrlImagenes  ;
   
     return (
       <div className="tarjeta">
         <h2>{titulo}</h2>
-        <img alt="" />
+        <Image   
+        loader={()=>imagen}
+        unoptimized={true}
+          src={imagen} alt={''} width='200' height='200'
+        />
         <p>{descripcion}</p>
         <button onClick={mostrarMensaje}>Cargar CV</button>
       </div>
@@ -41,9 +44,9 @@ interface TarjetaProps {
   
   function App() {
     const tarjetas: TarjetaProps[] = [
-      { titulo: 'Trabajo 1', descripcion: 'Esta es la primera tarjeta.', imagen: 'imagen1.jpg' },
-      { titulo: 'Trabajo 2', descripcion: 'Esta es la segunda tarjeta.', imagen: 'imagen2.jpg' },
-      { titulo: 'Trabajo 3', descripcion: 'Esta es la tercera tarjeta.', imagen: 'imagen3.png' },
+      { titulo: 'Creador de pociones', descripcion: 'Empleador: Escuela de Hogwarts<br>Carga Horaria: 8:00hs a 12:00hs<br>', imagen: '/imagen1.png' },
+      { titulo: 'Jardinero de mandragoras', descripcion: 'Esta es la segunda tarjeta.', imagen: '/imagen2.jpg' },
+      { titulo: 'Cazador de dementores', descripcion: 'Esta es la tercera tarjeta.', imagen: '/imagen3.jpg' },
     ];
   
     return (
