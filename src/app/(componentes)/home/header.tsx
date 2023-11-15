@@ -6,7 +6,7 @@ export const Titulo = () => {
     <section>
       <main>
         <div className="titulo text-white text-center">
-          <h1> Municipio de Hodwarts </h1>
+          <h1> Municipio de Hogwarts </h1>
         </div>
       </main>
     </section>
