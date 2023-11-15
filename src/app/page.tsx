@@ -1,25 +1,19 @@
 import Image from 'next/image'
-import '../app/layout'
-import { Header } from './componentes_home/header'
-import { Postulaciones } from './postulaciones'
-import { Footer } from './componentes_home/footer'
+import './layout'
+import { Header } from './(componentes)/generales/header'
+import { Titulo } from './(componentes)/home/header'
+import { Body } from './(componentes)/home/body'
+import { Footer } from './(componentes)/generales/footer'
 
-
-/*export default function Home() {
-  return (
-    <main>
-	  <Titulo/>
-    </main>
-  )
-}*/
 
 export default function Home() {
   return (
-    <main>
-    <Header/>
-	  <Postulaciones/>
+    <section>
+	  <Header/>
+    <Titulo/>
+    <Body/>
     <Footer/>
-    </main>
+    </section>
   )
 }
 
