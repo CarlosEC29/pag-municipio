@@ -5,6 +5,7 @@ import { Titulo } from './(componentes)/home/header'
 import { Body } from './(componentes)/home/body'
 import { Footer } from './(componentes)/generales/footer'
 
+
 export default function Home() {
   return (
     <section>
