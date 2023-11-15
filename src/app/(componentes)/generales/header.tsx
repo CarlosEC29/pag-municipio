@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import {BarraBusqueda} from '../barraBusqueda/BarraBusqueda'
+import {BarraBusqueda} from '../barraBusqueda/barraBusqueda'
 
 export const Header = () => {
   const router = useRouter();
@@ -18,8 +18,8 @@ export const Header = () => {
         <nav>
           <ul>
             <li><a onClick={goHome}>Home</a></li>
-            <li><a href="/postulaciones">Postulaciones</a></li>
-            <li><a onClick={goContrataciones} >Contrataciones</a></li>
+            <li><a href="/postulaciones">Empleos</a></li>
+            <li><a onClick={goContrataciones} >Candidatos</a></li>
             <li><BarraBusqueda/></li>
           </ul>
         </nav>
