@@ -1,30 +1,11 @@
-"use client"
-import React from 'react'
-<<<<<<< HEAD
-import { Link } from 'react-router-dom'
+'use client'
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import {Icono} from './icono'
-=======
-import { useRouter } from 'next/navigation'
-import {BarraBusqueda} from '../barraBusqueda/barraBusqueda'
->>>>>>> origin/page-gonzalo
 
-export const Header = () => {
-  const router = useRouter();
-
-  const goContrataciones = () => {
-    router.push("/contratos")
-  }
-  const goHome = () => {
-    router.push("/")
-  }
+export const BarraBusqueda = () => {
   return (
-    <section>
-      <header>
-<<<<<<< HEAD
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="#">Municipio de Hogwarts</a>
         <button
           className="navbar-toggler"
           type="button"
@@ -47,28 +28,21 @@ export const Header = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Menú
+                Menu
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a className="dropdown-item" href="#">Home</a></li>
-                <li><a className="dropdown-item" href="#">Postulaciones</a></li>
-                <li><a className="dropdown-item" href="#">Contrataciones</a></li>
-                <li><a className="dropdown-item" href="#">Galería de imagenes</a></li>
-                <li><a className="dropdown-item" href="#">Acerca de Nosotros</a></li>
+                <li><a className="dropdown-item" href="#">Empleos Disponibles</a></li>
+                <li><a className="dropdown-item" href="#">Carga de CVs</a></li>
                 <li><hr className="dropdown-divider" /></li>
+                <li>
+                  <a className="dropdown-item" href="#">Acerca de Nosotros</a>
+                </li>
                 <li className="nav-item">
                   <a className="dropdown-item">Contacto</a>
                 </li>
               </ul>
             </li>
-=======
-        <nav>
-          <ul>
-            <li><a onClick={goHome}>Home</a></li>
-            <li><a href="/postulaciones">Empleos</a></li>
-            <li><a onClick={goContrataciones} >Candidatos</a></li>
-            <li><BarraBusqueda/></li>
->>>>>>> origin/page-gonzalo
+            
           </ul>
           <form className="d-flex" role="search">
             <input
@@ -84,8 +58,5 @@ export const Header = () => {
         </div>
       </div>
     </nav>
-      </header>
-      
-    </section>
   )
 }

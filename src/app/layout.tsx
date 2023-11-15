@@ -1,6 +1,11 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+<<<<<<< HEAD:src/app/home/layout.tsx
 import 'src/app/globals.css'
+=======
+import './globals.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+>>>>>>> origin/page-gonzalo:src/app/layout.tsx
 
 const inter = Inter({ subsets: ['latin'] })
 
