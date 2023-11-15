@@ -1,18 +1,17 @@
 import Image from 'next/image'
-import '../app/layout'
+import styles from './page.module.css'
 import { Header } from '../(componentes)/generales/header'
-import { Titulo } from '../(componentes)/home/header'
-import { Body } from '../(componentes)/home/body'
+import { Body } from '../(componentes)/contratos/body'
 import { Footer } from '../(componentes)/generales/footer'
+//import '../globals.css';
 
 export default function Home() {
   return (
-    <section>
+    <main>
 	  <Header/>
-    <Titulo/>
     <Body/>
     <Footer/>
-    </section>
+    </main>
+    
   )
 }
-
