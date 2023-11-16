@@ -40,6 +40,7 @@ nav ul li:hover {
 .carrucel{
   width: 350px;
   height: 250px;
+  float: left;
 }
 .carousel-caption {
   position: absolute;
@@ -61,7 +62,10 @@ h1 {
   background-color: #FFFDD0;;
   padding: 5%;
 }
-
+.texto {
+  display: inline-block;
+  vertical-align: top;
+}
 .finpagina {
   position: fixed;
   bottom: 0;
