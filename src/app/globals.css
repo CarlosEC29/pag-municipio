@@ -88,13 +88,11 @@ h1 {
   border-radius: 10px;
   background: #e0e0e0;
 }
-<<<<<<< HEAD
 .tarjetas {
   background-color: #3E5C76;
 }
 
 /*Ignorar*/
-=======
 
 .lista-de-tarjetas {
   display: flex;
@@ -129,4 +127,3 @@ h1 {
   padding: 20px;
   border-radius: 5px;
 }
->>>>>>> feature-lucho
