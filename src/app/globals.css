@@ -6,6 +6,9 @@ header {
   z-index: 100;
   /*cuando baje la pagina se mantiene la barra*/
 }
+.menu{
+  background: rgba(142, 202, 230);
+}
 
 nav {
   float: left;
