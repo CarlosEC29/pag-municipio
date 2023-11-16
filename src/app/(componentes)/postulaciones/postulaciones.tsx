@@ -1,57 +1,84 @@
 'use client';
+import Image from 'next/image'
 
 interface TarjetaProps {
-    titulo: string;
-    descripcion: string;
-  }
-  
-  function Tarjeta({ titulo, descripcion }: TarjetaProps) {
+  nombre: string;
+  edad: string;
+  link: string;
+  skills: string;
+  fulltime: string;
+  movilidad: string;
+  imagen: string;
+}
 
-    const mostrarMensaje = () => {
-      alert('CV Cargado, muchas gracias!');
-    };
-  
-    return (
-      <div className="tarjeta">
-        <h2>{titulo}</h2>
-        <p>{descripcion}</p>
-        <button onClick={mostrarMensaje}>Cargar CV</button>
+function Tarjeta({ nombre, edad, link, skills, fulltime, movilidad, imagen }: TarjetaProps) {
+
+  return (
+    <div className="tarjeta">
+      <h2>{nombre}</h2>
+      <Image
+        loader={() => imagen}
+        unoptimized={true}
+        src={imagen} alt={''} width='200' height='200'
+      />
+      <div className='descripcion-tarjeta'>
+        <p>Edad:{edad}</p>
+        <p>Link al CV:{link}</p>
+        <p>Skills:{skills}</p>
+        <p>Busca fulltime:{fulltime}</p>
+        <p>Movilidad:{movilidad}</p>
       </div>
-    );
-  }
+    </div>
+  );
+}
+
+interface ListaDeTarjetasProps {
+  datosTarjetas: TarjetaProps[];
+}
+
+function ListaDeTarjetas({ datosTarjetas }: ListaDeTarjetasProps) {
+  return (
+    <div id="listadoTarjetas" className="lista-de-tarjetas">
+      {datosTarjetas.map((tarjeta, index) => (
+        <Tarjeta key={index} nombre={tarjeta.nombre} edad={tarjeta.edad} link={tarjeta.link} skills={tarjeta.skills}
+          fulltime={tarjeta.fulltime} movilidad={tarjeta.movilidad} imagen={tarjeta.imagen} />
+      ))}
+    </div>
+  );
+}
+
+function agregarTarjeta() {
+  //divListadoTarjetas = document.getElementById('listadoTarjetas');
   
-  interface ListaDeTarjetasProps {
-    datosTarjetas: TarjetaProps[];
-  }
-  
-  function ListaDeTarjetas({ datosTarjetas }: ListaDeTarjetasProps) {
-    return (
-      <div className="lista-de-tarjetas">
-        {datosTarjetas.map((tarjeta, index) => (
-          <Tarjeta key={index} titulo={tarjeta.titulo} descripcion={tarjeta.descripcion} />
-        ))}
-      </div>
-    );
-  }
-  
-  function App() {
-    
-    const tarjetas: TarjetaProps[] = [
-      { titulo: 'Trabajo 1', descripcion: 'Esta es la primera tarjeta.' },
-      { titulo: 'Trabajo 2', descripcion: 'Esta es la segunda tarjeta.' },
-      { titulo: 'Trabajo 3', descripcion: 'Esta es la tercera tarjeta.' },
-    ];
-  
-    return (
-      <div className="App">
-        <h1>Lista de trabajos</h1>
-        <ListaDeTarjetas datosTarjetas={tarjetas} />
-      </div>
-    );
+}
+
+function App() {
+  const tarjetas: TarjetaProps[] = [
+    { nombre: 'Rubeus Hagrid', edad: '62', link: '', skills: 'Fuerza fisica, Resistencia magica', fulltime: '', movilidad: '', imagen: '/hagrid.jpg' },
+    { nombre: 'Ron Weasley', edad: '16', link: '', skills: 'Bueno en el ajedrez, Mente estrategica', fulltime: '', movilidad: '', imagen: '/ron.jpg' },
+    { nombre: 'Severus Snape', edad: '54', link: '', skills: 'Maestro de pociones, Defensa contra artes oscuras, director de Hogwarts', fulltime: '', movilidad: '', imagen: '/snape.jpg' },
+  ];//nombre, edad, link a CV, Fulltime, Movilidad
+
+  const clickHandler = () => {
+    return (event: React.MouseEvent) => {
+      alert('Agregaste una tarjeta');
+      agregarTarjeta();
+      event.preventDefault();
+    }
   }
 
-  export const Postulaciones = () => {
-    return (
-     App()
-    )
-  }
+  return (
+    <div className="App">
+      <h1>Lista de trabajos</h1>
+      <ListaDeTarjetas datosTarjetas={tarjetas} />
+
+      <button onClick={clickHandler()}>Agregar Postulacion</button>
+    </div>
+  );
+}
+
+export const Postulaciones = () => {
+  return (
+    App()
+  )
+}

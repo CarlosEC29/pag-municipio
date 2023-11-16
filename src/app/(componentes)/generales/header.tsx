@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import {BarraBusqueda} from '../barraBusqueda/barraBusqueda'
+import {BarraBusqueda} from '../barraBusqueda/BarraBusqueda'
 
 export const Header = () => {
   const router = useRouter();{/*funcion para llamar al router */}

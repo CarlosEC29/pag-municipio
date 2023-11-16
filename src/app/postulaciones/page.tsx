@@ -2,12 +2,12 @@ import Image from 'next/image'
 import { Postulaciones } from '../(componentes)/postulaciones/postulaciones';
 import { Header } from '../(componentes)/generales/header';
 import { Footer } from '../(componentes)/generales/footer';
-//import '../globals.css';
+import './layout'
 
 export default function Home() {
   return (
     <main>
-      <Header/>
+    <Header/>
 	  <Postulaciones/>
     <Footer/>
     </main>
