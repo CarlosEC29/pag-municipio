@@ -1,10 +1,10 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import Hodwarts from './hodwarts.jpg'
-import Hodwarts2 from './hodwarts2.jpg'
-import Hodwarts3 from './hodwarts3.jpg'
-import Hodwarts4 from './hodwarts4.jpg'
+import Hogwarts from '../../../../public/hogwarts.jpg'
+import Hogwarts2 from '../../../../public/hogwarts2.jpg'
+import Hogwarts3 from '../../../../public/hogwarts3.jpg'
+import Hogwarts4 from '../../../../public/hogwarts4.jpg'
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,7 +15,7 @@ export const Body = () => {
       <Carousel.Item>
         <Image
           className="carrucel"
-          src={Hodwarts}
+          src={Hogwarts}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -26,7 +26,7 @@ export const Body = () => {
       <Carousel.Item>
         <Image
           className="carrucel"
-          src={Hodwarts2}
+          src={Hogwarts2}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -37,7 +37,7 @@ export const Body = () => {
       <Carousel.Item>
         <Image
           className="carrucel"
-          src={Hodwarts3}
+          src={Hogwarts3}
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -50,7 +50,7 @@ export const Body = () => {
       <Carousel.Item>
         <Image
           className="carrucel"
-          src={Hodwarts4}
+          src={Hogwarts4}
           alt="Third slide"
         />
         <Carousel.Caption>
