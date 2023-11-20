@@ -56,9 +56,9 @@ export const Body = () => {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h5>Escudo</h5>
+          <h5>Casas de hogwarts</h5>
           <p className=' texto text-right'>
-            
+          Las casas se llaman Gryffindor, Hufflepuff, Ravenclaw y Slytherin. Mientras estéis en Hogwarts, vuestros triunfos conseguirán que las casas ganen puntos, mientras que cualquier infracción de las reglas hará que los pierdan. Al finalizar el año, la casa que obtenga más puntos será premiada con la copa de la casa, un gran honor
           </p>
         </Carousel.Caption>
       </Carousel.Item>
