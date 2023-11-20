@@ -7,7 +7,7 @@ export const Aplicar = () => {
   const router = useRouter();{/*funcion para llamar al router */}
 
   const goEmpleos = () => {//funcion contrataciones para ir a la pagina
-    router.push("/postulaciones")
+    router.push("/contratos")
   }
   return (
     <section className='cuerpo'>

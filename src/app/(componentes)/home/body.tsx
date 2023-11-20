@@ -14,18 +14,18 @@ export const Body = () => {
   return (
     <section className='cuerpo'>{/* le doy una clase al fondo  */}
       <Carousel data-bs-theme="dark">{/*agrego carrucel y el estilo de este */}
-      <Carousel.Item>{/* agrego carrucel */}
+      <Carousel.Item className='alineacion'>{/* agrego carrucel */}
         <Image
           className="carrucel"
           src={Hogwarts}
           alt="First slide"
         />{/*agrege la imagen  */}
         <Carousel.Caption>
-          <h5>Historia</h5>
-          <p className='texto'>Hogwarts es una escuela a la cual asisten jóvenes magos para desarrollar sus habilidades mágicas. El edificio, situado en las colinas de Escocia, es visto como un antiguo edificio en ruinas por las personas ajenas a poderes mágicos (más comúnmente conocidos como muggles). Tiene siete plantas, varias torres, escaleras que cambian de posición a su antojo y extensos terrenos que contienen un lago, un bosque, llamado El Bosque Prohibido, y varios invernaderos con fines botánicos</p>
+          <h5>Territorio</h5>
+          <p className='texto text-right'>Es una escuela a la cual asisten jóvenes magos. El edificio, situado en las colinas de Escocia, es visto como un antiguo edificio en ruinas por las personas ajenas a poderes mágicos. Tiene siete plantas, varias torres, escaleras que cambian de posición y extensos terrenos que contienen un lago, un bosque, y varios invernaderos con fines botánicos</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className='alineacion'>
         <Image
           className="carrucel"
           src={Hogwarts2}
@@ -33,10 +33,10 @@ export const Body = () => {
         />
         <Carousel.Caption>
           <h5>Pasillo</h5>
-          <p className='texto'> Además de sus numerosas aulas en las que se imparten las clases de pociones, transformaciones, Defensa contra las Artes Oscuras, Historia de la magia y demás asignaturas por asistentes calificados, el castillo posee lugares con fines diferentes.</p>
+          <p className='texto text-right'> Además de sus numerosas aulas en las que se imparten las clases de pociones, transformaciones, Defensa contra las Artes Oscuras, Historia de la magia y demás asignaturas por asistentes calificados, el castillo posee lugares con fines diferentes.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className='alineacion'>
         <Image
           className="carrucel"
           src={Hogwarts3}
@@ -44,12 +44,12 @@ export const Body = () => {
         />
         <Carousel.Caption>
           <h5>Comedor</h5>
-          <p>
+          <p className='texto text-right'>
             Hay un amplio comedor para que todos los alumnos y maestros puedan estar alli. con capasidad de 3000 personas
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className='alineacion'>
         <Image
           className="carrucel"
           src={Hogwarts4}
@@ -57,7 +57,7 @@ export const Body = () => {
         />
         <Carousel.Caption>
           <h5>Escudo</h5>
-          <p>
+          <p className=' texto text-right'>
             
           </p>
         </Carousel.Caption>

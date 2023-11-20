@@ -42,6 +42,7 @@ nav ul li:hover {
   width: 350px;
   height: 250px;
   float: left;
+  margin-right: 10px;
 }
 
 .carousel-caption {
@@ -63,12 +64,16 @@ h1 {
 
 .cuerpo {
   background-color: #FFFDD0;
-  ;
   padding: 5%;
 }
+.alineacion{
+  overflow: auto;
+}
 .texto {
-  display: inline-block;
-  vertical-align: top;
+  margin-left: 170px;
+  text-align: right;
+  /*display: inline-block;*/
+  /*vertical-align: top;*/
 }
 .finpagina {
   position: fixed;
