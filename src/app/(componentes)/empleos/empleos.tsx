@@ -2,11 +2,18 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import Button from 'react-bootstrap/Button';
 import EstudiosImage from '../../../../public/estudios.jpg'
 import MascotaImage from '../../../../public/mascota.png'
 import RunasImage from '../../../../public/runas.png'
+import { useRouter } from 'next/navigation'
 
 export const Body = () => {
+    const router = useRouter();{/*funcion para llamar al router */}
+
+const goFormulario = () => {//funcion contrataciones para ir a la pagina
+    router.push("/curriculum")
+}
   return (
     <section className='cuerpo'>
       <CardGroup>
@@ -19,7 +26,7 @@ export const Body = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">cargado hace 2 dias</small>
+          <small className="text-muted">cargado hace 2 dias<Button onClick={goFormulario} variant="success" size="sm">Cargar CV</Button></small>
         </Card.Footer>
       </Card>
       <Card>
@@ -31,7 +38,7 @@ export const Body = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">cargado hace 2 horas</small>
+          <small className="text-muted">cargado hace 2 horas<Button onClick={goFormulario} variant="success" size="sm">Cargar CV</Button></small>
         </Card.Footer>
       </Card>
       <Card>
@@ -43,7 +50,7 @@ export const Body = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">cargado hace 3 semanas</small>
+          <small className="text-muted">cargado hace 3 semanas<Button onClick={goFormulario} variant="success" size="sm">Cargar CV</Button></small>
         </Card.Footer>
       </Card>
     </CardGroup>
