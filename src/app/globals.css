@@ -6,6 +6,9 @@ header {
   z-index: 100;
   /*cuando baje la pagina se mantiene la barra*/
 }
+.menu{
+  background: rgba(142, 202, 230);
+}
 
 nav {
   float: left;
@@ -34,6 +37,20 @@ nav ul li:hover {
   background: #25AED0;
 }
 
+/*foto del carrucel*/
+.carrucel {
+  width: 350px;
+  height: 250px;
+  float: left;
+  margin-right: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /*aca termina la configuracion visual de la barra */
 .titulo {
   background-color: #C09614;
@@ -46,19 +63,72 @@ h1 {
 }
 
 .cuerpo {
-  background-color: rgba(240, 235, 216);
+  background-color: #FFFDD0;
   padding: 5%;
 }
-
+.alineacion{
+  overflow: auto;
+}
+.texto {
+  margin-left: 170px;
+  text-align: right;
+  /*display: inline-block;*/
+  /*vertical-align: top;*/
+}
 .finpagina {
-  position: sticky;
-  top: 0;
-  background-color: rgba(219, 63, 48);
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  padding: 30px 20px;
-  height: 100px;
+  height: 60px;
+  background-color: rgba(219, 63, 48);
 }
 
+.tarjeta {
+  padding: 10px;
+  border: #1D2D44 1px solid;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background: #e0e0e0;
+}
 .tarjetas {
   background-color: #3E5C76;
+}
+
+/*Ignorar*/
+
+.lista-de-tarjetas {
+  display: flex;
+}
+
+.descripcion-tarjeta {
+  max-width: 300px;
+  text-align: center;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
 }
