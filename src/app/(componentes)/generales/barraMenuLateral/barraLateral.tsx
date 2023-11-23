@@ -2,7 +2,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
 
-export const barraLateral = () => {
+export const BarraLateral = () => {
 	return (
 		<select className="cuerpo">{/*le agrego el css */}
 			<div className="container">
