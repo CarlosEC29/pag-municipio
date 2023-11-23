@@ -15,7 +15,7 @@ export const BarraLateral = () => {
     }
 
     return (
-        <select className="cuerpo">{/*le agrego el css */}
+        <div className="cuerpo izquierda">{/*le agrego el css */}
 
             <Nav defaultActiveKey="/home" className="flex-column">
 
@@ -23,7 +23,7 @@ export const BarraLateral = () => {
                 <nav><a onClick={goContrataciones}>Empleos</a> </nav>
                 <nav><a href="/postulaciones" >Candidatos</a> </nav> { /* con un href llamo a la carpeta para habrirlo al ocar el boton */}
             </Nav>
-        </select>
+        </div>
 
     )
 }
