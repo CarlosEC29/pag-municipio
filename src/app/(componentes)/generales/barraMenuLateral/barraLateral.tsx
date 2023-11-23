@@ -14,6 +14,9 @@ export const BarraLateral = () => {
     const goHome = () => {//funcion home para ir a la pagina
         router.push("/")
     }
+    const goPostulaciones = () => {//funcion home para ir a la pagina
+      router.push("/postulaciones")
+  }
 
     return (
         <div className="cuerpo izquierda">{/*le agrego el css */}
@@ -21,8 +24,8 @@ export const BarraLateral = () => {
             <Nav defaultActiveKey="/home" className="flex-column">
             
                 <nav><Button  onClick={goHome}>Home </Button> </nav>  {/*con el onClick llamo a la funcion goHome  para abrir la pagina */}
-                <nav><a onClick={goContrataciones}>Empleos</a> </nav>
-                <nav><a href="/postulaciones" >Candidatos</a> </nav> { /* con un href llamo a la carpeta para habrirlo al ocar el boton */}
+                <nav><Button onClick={goContrataciones}>Empleos</Button> </nav>
+                <nav><Button onClick={goPostulaciones} >Candidatos</Button> </nav>
             </Nav>
         </div>
 
