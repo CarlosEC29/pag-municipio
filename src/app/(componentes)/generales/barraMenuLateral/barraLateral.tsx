@@ -2,6 +2,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
 import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
 
 export const BarraLateral = () => {
 
@@ -18,8 +19,8 @@ export const BarraLateral = () => {
         <div className="cuerpo izquierda">{/*le agrego el css */}
 
             <Nav defaultActiveKey="/home" className="flex-column">
-
-                <nav><a onClick={goHome}>Home</a> </nav>  {/*con el onClick llamo a la funcion goHome  para abrir la pagina */}
+            
+                <nav><Button  onClick={goHome}>Home </Button> </nav>  {/*con el onClick llamo a la funcion goHome  para abrir la pagina */}
                 <nav><a onClick={goContrataciones}>Empleos</a> </nav>
                 <nav><a href="/postulaciones" >Candidatos</a> </nav> { /* con un href llamo a la carpeta para habrirlo al ocar el boton */}
             </Nav>
