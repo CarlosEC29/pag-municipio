@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import EstudiosImage from '../../../../public/estudios.jpg'
 import MascotaImage from '../../../../public/mascota.png'
 import RunasImage from '../../../../public/runas.png'
+import DefensasImage from '../../../../public/defensa oscura.png'
 import { useRouter } from 'next/navigation'
 
 export const Body = () => {
@@ -48,12 +49,11 @@ export const Body = () => {
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
+          <Card.Img variant="top" src={DefensasImage.src} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Defensas de las artes oscuras</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the cards content.
+            En esta clase, los estudiantes estudian y aprenden cómo defenderse de todos los aspectos de las Artes Oscuras, incluidas las criaturas oscuras.
             </Card.Text>
             <small className="text-muted">cargado hace 3 semanas<Button onClick={goFormulario} variant="success" size="sm">Cargar CV</Button></small>
           </Card.Body>
