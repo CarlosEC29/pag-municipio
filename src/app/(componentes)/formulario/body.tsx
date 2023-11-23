@@ -165,19 +165,6 @@ export function Cuerpo() {
               {errors.file}
             </Form.Control.Feedback>
           </Form.Group>
-          <Form.Group className="position-relative mb-3">
-            <Form.Check
-              required
-              name="terms"
-              label="Acepte los terminos y condiciones"
-              onChange={handleChange}
-              isInvalid={!!errors.terms}
-              feedback={errors.terms}
-              feedbackType="invalid"
-              id="validationFormik106"
-              feedbackTooltip
-            />
-          </Form.Group>
           <Button type="submit">Enviar CV</Button>
         </Form>
       )}
