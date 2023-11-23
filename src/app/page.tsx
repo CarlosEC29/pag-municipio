@@ -5,7 +5,7 @@ import { Titulo } from './(componentes)/home/header'
 import { Body } from './(componentes)/home/body'
 import { Footer } from './(componentes)/generales/footer'
 import { Aplicar } from './(componentes)/home/footer'
-import { barraLateral } from './(componentes)/generales/barraMenuLateral/barraLateral'
+import { BarraLateral } from './(componentes)/generales/barraMenuLateral/barraLateral'
 
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
     <section>
 	  <Header/>
     <Titulo/>
-    <barraLateral/>
+    <BarraLateral/>
     <Body/>
     <Aplicar/>
     <Footer/>
