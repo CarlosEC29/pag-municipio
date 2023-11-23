@@ -10,14 +10,14 @@ import { BarraLateral } from './(componentes)/generales/barraMenuLateral/barraLa
 
 export default function Home() {
   return (
-    <section>
+    <div>
 	  <Header/>
     <Titulo/>
     <BarraLateral/>
     <Body/>
     <Aplicar/>
     <Footer/>
-    </section>
+    </div>
   )
 }
 
