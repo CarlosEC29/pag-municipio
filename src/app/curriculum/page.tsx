@@ -8,10 +8,10 @@ import { Titulo } from '../(componentes)/formulario/header';
 export default function Home() {
   return (
     <main>
-    <Header/>
-    <Titulo/>
-	  <Cuerpo/>
-    <Footer/>
+      <Header />
+      <Titulo />
+      <Cuerpo />
+      <Footer />
     </main>
   )
 }

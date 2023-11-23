@@ -9,11 +9,11 @@ import { Footer } from '../(componentes)/generales/footer';
 export default function Home() {
   return (
     <main>
-	  <Header/>
-    <Titulo/>
-    <Body/>
-    <Footer/>
+      <Header />
+      <Titulo />
+      <Body />
+      <Footer />
     </main>
-    
+
   )
 }

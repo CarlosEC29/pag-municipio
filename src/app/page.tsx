@@ -10,11 +10,11 @@ import { Aplicar } from './(componentes)/home/footer'
 export default function Home() {
   return (
     <section>
-	  <Header/>
-    <Titulo/>
-    <Body/>
-    <Aplicar/>
-    <Footer/>
+      <Header />
+      <Titulo />
+      <Body />
+      <Aplicar />
+      <Footer />
     </section>
   )
 }
