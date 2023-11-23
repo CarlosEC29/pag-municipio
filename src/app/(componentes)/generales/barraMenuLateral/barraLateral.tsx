@@ -1,16 +1,29 @@
 "use client"
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import Nav from 'react-bootstrap/Nav';
 
 export const BarraLateral = () => {
-	return (
-		<select className="cuerpo">{/*le agrego el css */}
-			<div className="container">
-				<p className="float-start"> contacto telefonico: 2284-****** </p>
-				<p className="float-end">correo:<a className="link-opacity-50-hover"
-						href="" target="blank">municipalidadhodward@gmail.com</a></p>{/*al correo lo hago un boton link */}
-			</div>
-		</select>
 
-	)
+    const router = useRouter(); {/*funcion para llamar al router */ }
+
+    const goContrataciones = () => {//funcion contrataciones para ir a la pagina
+        router.push("/contratos")
+    }
+    const goHome = () => {//funcion home para ir a la pagina
+        router.push("/")
+    }
+
+    return (
+        <select className="cuerpo">{/*le agrego el css */}
+
+            <Nav defaultActiveKey="/home" className="flex-column">
+
+                <nav><a onClick={goHome}>Home</a> </nav>  {/*con el onClick llamo a la funcion goHome  para abrir la pagina */}
+                <nav><a onClick={goContrataciones}>Empleos</a> </nav>
+                <nav><a href="/postulaciones" >Candidatos</a> </nav> { /* con un href llamo a la carpeta para habrirlo al ocar el boton */}
+            </Nav>
+        </select>
+
+    )
 }
