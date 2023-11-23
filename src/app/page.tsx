@@ -5,16 +5,18 @@ import { Titulo } from './(componentes)/home/header'
 import { Body } from './(componentes)/home/body'
 import { Footer } from './(componentes)/generales/footer'
 import { Aplicar } from './(componentes)/home/footer'
+import { barraLateral } from './(componentes)/generales/barraMenuLateral/barraLateral'
 
 
 export default function Home() {
   return (
     <section>
-      <Header />
-      <Titulo />
-      <Body />
-      <Aplicar />
-      <Footer />
+	  <Header/>
+    <Titulo/>
+    <barraLateral/>
+    <Body/>
+    <Aplicar/>
+    <Footer/>
     </section>
   )
 }
