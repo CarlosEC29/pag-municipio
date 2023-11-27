@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Body = () => {
   return (
-    <section className='cuerpo centro'>{/* le doy una clase al fondo  */}
+    <section className='cuerpo'>{/* le doy una clase al fondo  */}
       <Carousel data-bs-theme="dark">{/*agrego carrucel y el estilo de este */}
         <Carousel.Item className='alineacion'>{/* agrego carrucel */}
           <Image
