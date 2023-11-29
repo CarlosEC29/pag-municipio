@@ -10,49 +10,48 @@ import * as yup from 'yup';
 
 export function Cuerpo() {
   const { Formik } = formik;
-
+  /*creo la funcion  para hacer una alerta de mensaje de error*/
   const schema = yup.object().shape({
-    firstName: yup.string().required(),
-    lastName: yup.string().required(),
+    primerNombre: yup.string().required(),
+    primerApellido: yup.string().required(),
     username: yup.string().required(),
-    city: yup.string().required(),
-    state: yup.string().required(),
-    zip: yup.string().required(),
+    ciudad: yup.string().required(),
+    pais: yup.string().required(),
+    Trabajo: yup.string().required(),
     file: yup.mixed().required(),
-    terms: yup.bool().required().oneOf([true], 'terms must be accepted'),
   });
 
   return (
-    <div className='cuerpo'>
+    <div className='cuerpo'>{/*le doy cla clase cuerpo para que tenga color la pagina */}
       <Formik className='cuerpoForm'
         validationSchema={schema}
         onSubmit={console.log}
         initialValues={{
-          firstName: '',
-          lastName: '',
+          primerNombre: '',
+          primerApellido: '',
           username: '',
-          city: '',
-          state: '',
-          zip: '',
+          ciudad: '',
+          pais: '',
+          Trabajo: '',
           file: null,
         }}
-      >
+      >{/* para que salga el error tiene que estar vacios los campos */}
         {({ handleSubmit, handleChange, values, touched, errors }) => (
           <Form noValidate onSubmit={handleSubmit} className='cuerpoForm'>
-            <Row className="mb-3">
+            <Row className="mb-5">{/*cada row se divide como un renglon */}
               <Form.Group
                 as={Col}
                 md="4"
                 controlId="validationFormik101"
                 className="position-relative"
-              >
+              >{/*as se indica que columna----md indica el tamaño de largo */}
                 <Form.Label>Nombre</Form.Label>
                 <Form.Control
                   type="text"
-                  name="Name"
-                  value={values.firstName}
+                  name="primerNombre"
+                  value={values.primerNombre}
                   onChange={handleChange}
-                  isValid={touched.firstName && !errors.firstName}
+                  isValid={touched.primerNombre && !errors.primerNombre}
                 />
                 <Form.Control.Feedback tooltip>Correcto</Form.Control.Feedback>
               </Form.Group>
@@ -65,22 +64,21 @@ export function Cuerpo() {
                 <Form.Label>Apelido</Form.Label>
                 <Form.Control
                   type="text"
-                  name="lastName"
-                  value={values.lastName}
+                  name="primerApellido"
+                  value={values.primerApellido}
                   onChange={handleChange}
-                  isValid={touched.lastName && !errors.lastName}
+                  isValid={touched.primerApellido && !errors.primerApellido}
                 />
-
                 <Form.Control.Feedback tooltip>Correcto</Form.Control.Feedback>
               </Form.Group>
               <Form.Group as={Col} md="4" controlId="validationFormikUsername2">
                 <Form.Label>Correo</Form.Label>
                 <InputGroup hasValidation>
-                  <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
+                  <InputGroup.Text id="idCorreo">@</InputGroup.Text>
                   <Form.Control
                     type="text"
                     placeholder="Correo"
-                    aria-describedby="inputGroupPrepend"
+                    aria-describedby="idCorreo"
                     name="username"
                     value={values.username}
                     onChange={handleChange}
@@ -92,7 +90,7 @@ export function Cuerpo() {
                 </InputGroup>
               </Form.Group>
             </Row>
-            <Row className="mb-3">
+            <Row className="mb-5">
               <Form.Group
                 as={Col}
                 md="8"
@@ -120,53 +118,48 @@ export function Cuerpo() {
                   <option>+ 36</option>
                 </Form.Select>
               </Form.Group>
-              
             </Row>
-            <Row>
+            <Row className="mb-5">{/*este row cuenta como dos renglones */}
               <Form.Group>
-              <Form.Label>Tienes movilidad propia</Form.Label>
-                {['radio'].map((type) => (
-                  <div key={`inline-${type}`} className="mb-3">
-                    <Form.Check
-                      inline
-                      label="si"
-                      name="group1"
-                      type={type}
-                      id={`inline-${type}-1`}
-                    />
-                    <Form.Check
-                      inline
-                      label="no"
-                      name="group1"
-                      type={type}
-                      id={`inline-${type}-2`}
-                    />
-                  </div>
-                ))}
+                <Form.Label>Tienes movilidad propia</Form.Label>
+                <div key={`inline-radio`} className="mb-3">
+                  <Form.Check
+                    inline
+                    label="si"
+                    name="group1"
+                    type="radio"
+                    id={`inline-radio-1`}
+                  />
+                  <Form.Check
+                    inline
+                    label="no"
+                    name="group1"
+                    type="radio"
+                    id={`inline-radio-2`}
+                  />
+                </div>
               </Form.Group>
               <Form.Group>
-              <Form.Label>Buscas full time</Form.Label>
-                {['radio'].map((type) => (
-                  <div key={`inline-${type}`} className="mb-3">
-                    <Form.Check
-                      inline
-                      label="si"
-                      name="group1"
-                      type={type}
-                      id={`inline-${type}-1`}
-                    />
-                    <Form.Check
-                      inline
-                      label="no"
-                      name="group1"
-                      type={type}
-                      id={`inline-${type}-2`}
-                    />
-                  </div>
-                ))}
+                <Form.Label>Buscas full time</Form.Label>
+                <div key={`inline-radio`} className="mb-3">
+                  <Form.Check
+                    inline
+                    label="si"
+                    name="group2"
+                    type="radio"
+                    id={`inline-radio-1`}
+                  />
+                  <Form.Check
+                    inline
+                    label="no"
+                    name="group2"
+                    type="radio"
+                    id={`inline-radio-2`}
+                  />
+                </div>
               </Form.Group>
             </Row>
-            <Row className="mb-3">
+            <Row className="mb-5">
               <Form.Group
                 as={Col}
                 md="4"
@@ -177,14 +170,13 @@ export function Cuerpo() {
                 <Form.Control
                   type="text"
                   placeholder="Ciudad"
-                  name="city"
-                  value={values.city}
+                  name="ciudad"
+                  value={values.ciudad}
                   onChange={handleChange}
-                  isInvalid={!!errors.city}
+                  isInvalid={!!errors.ciudad}
                 />
-
                 <Form.Control.Feedback type="invalid" tooltip>
-                  {errors.city}
+                  {errors.ciudad}
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group
@@ -197,13 +189,13 @@ export function Cuerpo() {
                 <Form.Control
                   type="text"
                   placeholder="Pais"
-                  name="state"
-                  value={values.state}
+                  name="pais"
+                  value={values.pais}
                   onChange={handleChange}
-                  isInvalid={!!errors.state}
+                  isInvalid={!!errors.pais}
                 />
                 <Form.Control.Feedback type="invalid" tooltip>
-                  {errors.state}
+                  {errors.pais}
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group
@@ -212,34 +204,35 @@ export function Cuerpo() {
                 controlId="validationFormik105"
                 className="position-relative"
               >
-                <Form.Label>Area Magica</Form.Label>
+                <Form.Label>Area Magica a solicitar empleo</Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="area magica"
-                  name="zip"
-                  value={values.zip}
+                  name="Trabajo"
+                  value={values.Trabajo}
                   onChange={handleChange}
-                  isInvalid={!!errors.zip}
+                  isInvalid={!!errors.Trabajo}
                 />
-
                 <Form.Control.Feedback type="invalid" tooltip>
-                  {errors.zip}
+                  {errors.Trabajo}
                 </Form.Control.Feedback>
               </Form.Group>
             </Row>
-            <Form.Group className="position-relative mb-3">
-              <Form.Label>Suba su Curriculum</Form.Label>
-              <Form.Control
-                type="file"
-                required
-                name="file"
-                onChange={handleChange}
-                isInvalid={!!errors.file}
-              />
-              <Form.Control.Feedback type="invalid" tooltip>
-                {errors.file}
-              </Form.Control.Feedback>
-            </Form.Group>
+            <Row className="mb-5">
+              <Form.Group className="position-relative mb-3">
+                <Form.Label>Suba su Curriculum</Form.Label>
+                <Form.Control
+                  type="file"
+                  required
+                  name="file"
+                  onChange={handleChange}
+                  isInvalid={!!errors.file}
+                />
+                <Form.Control.Feedback type="invalid" tooltip>
+                  {errors.file}
+                </Form.Control.Feedback>
+              </Form.Group>
+            </Row>
             <Button type="submit">Enviar CV</Button>
           </Form>
         )}
