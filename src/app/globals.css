@@ -55,33 +55,36 @@ nav ul li:hover {
 .titulo {
   background-color: #C09614;
   width: 100%;
-  height: 150px;
+  height: 120px;
 }
 .izquierda {
-  min-width: 200px;
+  
   background-color: azure;
-  padding: 10px 5px;
-}
+  
+}/*padding: 10px 5px;*//*min-width: 200px;*/
 h1 {
   padding-top: 60px;
 }
 
 .cuerpo {
   background-color: #FFFDD0;
+}
+
+.cuerpoForm{
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .alineacion{
   overflow: auto;
 }
 
-
 .texto {
   margin-left: 170px;
   text-align: right;
-  /*display: inline-block;*/
+  
+}/*display: inline-block;*/
   /*vertical-align: top;*/
-}
 .finpagina {
   position: fixed;
   bottom: 0;

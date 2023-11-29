@@ -10,13 +10,13 @@ export const Aplicar = () => {
     router.push("/contratos")
   }
   return (
-    <section className='cuerpo'>
+    <div className='cuerpo'>
       <div className="d-grid gap-2">
         <Button onClick={goEmpleos} variant="primary" size="lg">
           Buscar Empleos Disponibles
         </Button>
       </div>
-    </section>
+    </div>
 
   )
 }
