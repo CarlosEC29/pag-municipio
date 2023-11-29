@@ -23,9 +23,9 @@ export const BarraLateral = () => {
 
             <Nav defaultActiveKey="/home" className="flex-column">
             
-                <nav><Button  onClick={goHome}>Home </Button> </nav>  {/*con el onClick llamo a la funcion goHome  para abrir la pagina */}
-                <nav><Button onClick={goContrataciones}>Empleos</Button> </nav>
-                <nav><Button onClick={goPostulaciones} >Candidatos</Button> </nav>
+                <nav className='mb-3'><Button  onClick={goHome}>Home </Button> </nav>  {/*con el onClick llamo a la funcion goHome  para abrir la pagina */}
+                <nav className='mb-3'><Button onClick={goContrataciones}>Empleos</Button> </nav>
+                <nav className='mb-3'><Button onClick={goPostulaciones} >Candidatos</Button> </nav>
             </Nav>
         </div>
 

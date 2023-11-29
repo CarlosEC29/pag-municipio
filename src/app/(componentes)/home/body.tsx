@@ -13,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export const Body = () => {
   return (
     <section className='cuerpo'>{/* le doy una clase al fondo  */}
+    <div className='cuerpoHome'>
       <Carousel data-bs-theme="dark">{/*agrego carrucel y el estilo de este */}
         <Carousel.Item className='alineacion'>{/* agrego carrucel */}
           <Image
@@ -63,6 +64,7 @@ export const Body = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      </div>
     </section>
 
   )
