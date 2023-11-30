@@ -52,6 +52,11 @@ nav ul li:hover {
   transform: translateY(-50%);
 }
 
+.imagenHome {
+  width: 100%;
+  height: auto;
+}
+
 .titulo {
   background-color: #C09614;
   width: 100%;
@@ -79,6 +84,9 @@ h1 {
   margin-left: 130px;
 }
 
+.footerHome{
+  margin-top: 100px;
+}
 .cuerpoForm {
   margin-left: 40px;
   margin-right: 40px;

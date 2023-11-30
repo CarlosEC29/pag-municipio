@@ -2,6 +2,8 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
+import Numero from '../../../../public/imagen.png'
 
 export const Aplicar = () => {
   const router = useRouter(); {/*funcion para llamar al router */ }
@@ -11,10 +13,17 @@ export const Aplicar = () => {
   }
   return (
     <div className='cuerpo'>
-      <div className="d-grid gap-2">
-        <Button onClick={goEmpleos} variant="primary" size="lg">
-          Buscar Empleos Disponibles
-        </Button>
+      <Image
+        className='imagenHome'
+        src={Numero}
+        alt="First slide"
+      />
+      <div className='cuerpo'>
+        <div className="d-grid gap-2">
+          <Button onClick={goEmpleos} variant="primary" size="lg">
+            Buscar Empleos Disponibles
+          </Button>
+        </div>
       </div>
     </div>
 
