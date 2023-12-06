@@ -3,7 +3,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import Numero from '../../../../public/imagen.png'
+import Numero from '../../../../public/home/imagen.png'
 
 export const Aplicar = () => {
   const router = useRouter(); {/*funcion para llamar al router */ }

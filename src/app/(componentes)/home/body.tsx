@@ -2,10 +2,10 @@
 import React from 'react'
 import Image from 'next/image'
 // a continuacion importo las imagenes y les pongo un nombre para llamarlos
-import Hogwarts from '../../../../public/hogwarts.jpg'
-import Hogwarts2 from '../../../../public/hogwarts2.jpg'
-import Hogwarts3 from '../../../../public/hogwarts3.jpg'
-import Hogwarts4 from '../../../../public/hogwarts4.jpg'
+import Hogwarts from '../../../../public/carrucel/hogwarts.jpg'
+import Hogwarts2 from '../../../../public/carrucel/hogwarts2.jpg'
+import Hogwarts3 from '../../../../public/carrucel/hogwarts3.jpg'
+import Hogwarts4 from '../../../../public/carrucel/hogwarts4.jpg'
 import Carousel from 'react-bootstrap/Carousel';
 //importo el css del bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';

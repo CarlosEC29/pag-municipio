@@ -3,10 +3,10 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Button from 'react-bootstrap/Button';
-import EstudiosImage from '../../../../public/estudios.jpg'
-import MascotaImage from '../../../../public/mascota.png'
-import RunasImage from '../../../../public/runas.png'
-import DefensasImage from '../../../../public/defensa oscura.png'
+import EstudiosImage from '../../../../public/empleos/estudios.jpg'
+import MascotaImage from '../../../../public/empleos/mascota.png'
+import RunasImage from '../../../../public/empleos/runas.png'
+import DefensasImage from '../../../../public/empleos/defensa oscura.png'
 import { useRouter } from 'next/navigation'
 import Accordion from 'react-bootstrap/Accordion';
 

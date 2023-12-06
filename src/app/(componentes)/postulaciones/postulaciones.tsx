@@ -55,9 +55,9 @@ function agregarTarjeta() {
 
 function App() {
   const tarjetas: TarjetaProps[] = [
-    { nombre: 'Rubeus Hagrid', edad: '62', link: '', skills: 'Fuerza fisica, Resistencia magica', fulltime: '', movilidad: '', imagen: '/hagrid.jpg' },
-    { nombre: 'Ron Weasley', edad: '16', link: '', skills: 'Bueno en el ajedrez, Mente estrategica', fulltime: '', movilidad: '', imagen: '/ron.jpg' },
-    { nombre: 'Severus Snape', edad: '54', link: '', skills: 'Maestro de pociones, Defensa contra artes oscuras, director de Hogwarts', fulltime: '', movilidad: '', imagen: '/snape.jpg' },
+    { nombre: 'Rubeus Hagrid', edad: '62', link: '', skills: 'Fuerza fisica, Resistencia magica', fulltime: '', movilidad: '', imagen: '/postulantes/hagrid.jpg' },
+    { nombre: 'Ron Weasley', edad: '16', link: '', skills: 'Bueno en el ajedrez, Mente estrategica', fulltime: '', movilidad: '', imagen: '/postulantes/ron.jpg' },
+    { nombre: 'Severus Snape', edad: '54', link: '', skills: 'Maestro de pociones, Defensa contra artes oscuras, director de Hogwarts', fulltime: '', movilidad: '', imagen: '/postulantes/snape.jpg' },
   ];//nombre, edad, link a CV, Fulltime, Movilidad
 /*w */
   const clickHandler = () => {
