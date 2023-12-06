@@ -70,7 +70,6 @@ function App() {
 
   return (
     <div className="App cuerpo">
-      <h1>Lista de trabajos</h1>
       <ListaDeTarjetas datosTarjetas={tarjetas} />
 
       <button onClick={clickHandler()}>Agregar Postulacion</button>
