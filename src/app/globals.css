@@ -62,7 +62,7 @@ nav ul li:hover {
   width: 100%;
   height: 110px;
 }
-
+/* barra lateral*/
 .izquierda {
   box-sizing: content-box;
   display: block;
@@ -71,17 +71,17 @@ nav ul li:hover {
   position: fixed;
   z-index: 999999;
 }
-
+/*titulo*/
 h1 {
   padding-top: 65px;
 }
-
+/* color de la pagina*/
 .cuerpo {
   background-color: #FFFDD0;
 }
-
+/*espacio para que se vea la barra lateral*/
 .cuerpoHome {
-  margin-left: 170px;
+  margin-left: 174px;
 }
 
 .footerHome{
@@ -102,10 +102,7 @@ h1 {
 
 }
 
-/*display: inline-block;*/
-/*vertical-align: top;*/
 .finpagina {
-  /*position: fixed;*/
   bottom: 0;
   width: 100%;
   height: 60px;
@@ -113,12 +110,14 @@ h1 {
 }
 
 .boton2{
-  color: rgb(29, 65, 68);
+  color: rgb(19, 69, 134);
   text-decoration: none;
+  display: block;
 }
 
 .boton1{
-  background: rgb(187, 142, 230);
+  background: rgb(142, 195, 230);
+  padding-bottom: 15px;
 }
 
 .tarjeta {
