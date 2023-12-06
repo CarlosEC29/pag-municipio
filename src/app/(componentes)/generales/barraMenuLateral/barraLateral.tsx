@@ -1,33 +1,21 @@
 "use client"
 import React from 'react'
-import { useRouter } from 'next/navigation'
+import Image from 'next/image'
+import Facebook from '../../../../../public/facebook.png'
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 
 export const BarraLateral = () => {
+  return (
+    <div className=" izquierda">{/*le agrego el css */}
 
-    const router = useRouter(); {/*funcion para llamar al router */ }
+      <Nav defaultActiveKey="/home" className="flex-column"> {/* */}
+        <nav className='mb-3'><a className='page-link boton2' href=''> Twitter</a></nav>
+        <nav className='mb-3 boton1'><a className='page-link boton2' href='Whatsapp'>Whatsapp</a> </nav>
+        <nav className='mb-3 boton1'><a className='page-link boton2' href='Facebook' >Facebook</a> </nav>
+        <nav className='boton1'><a className='page-link boton2' type="button" href="https://play.howstuffworks.com/quiz/a-qu-casa-de-hogwarts-perteneces" >A que casa perteneces</a></nav>
+      </Nav>
+    </div>
 
-    const goContrataciones = () => {//funcion contrataciones para ir a la pagina
-        router.push("/contratos")
-    }
-    const goHome = () => {//funcion home para ir a la pagina
-        router.push("/")
-    }
-    const goPostulaciones = () => {//funcion home para ir a la pagina
-      router.push("/postulaciones")
-  }
-
-    return (
-        <div className="cuerpo izquierda">{/*le agrego el css */}
-
-            <Nav defaultActiveKey="/home" className="flex-column">
-            
-                <nav className='mb-3'><Button  onClick={goHome}>Home </Button> </nav>  {/*con el onClick llamo a la funcion goHome  para abrir la pagina */}
-                <nav className='mb-3'><Button onClick={goContrataciones}>Empleos</Button> </nav>
-                <nav className='mb-3'><Button onClick={goPostulaciones} >Candidatos</Button> </nav>
-            </Nav>
-        </div>
-
-    )
+  )
 }

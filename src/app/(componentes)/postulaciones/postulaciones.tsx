@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image'
+import {Postulantes} from '../../../../public/postulantes/postulantes'
 
 interface TarjetaProps {
   nombre: string;
@@ -58,7 +59,7 @@ function App() {
     { nombre: 'Ron Weasley', edad: '16', link: '', skills: 'Bueno en el ajedrez, Mente estrategica', fulltime: '', movilidad: '', imagen: '/ron.jpg' },
     { nombre: 'Severus Snape', edad: '54', link: '', skills: 'Maestro de pociones, Defensa contra artes oscuras, director de Hogwarts', fulltime: '', movilidad: '', imagen: '/snape.jpg' },
   ];//nombre, edad, link a CV, Fulltime, Movilidad
-
+/*w */
   const clickHandler = () => {
     return (event: React.MouseEvent) => {
       alert('Agregaste una tarjeta');
@@ -68,7 +69,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App cuerpo">
       <h1>Lista de trabajos</h1>
       <ListaDeTarjetas datosTarjetas={tarjetas} />
 
