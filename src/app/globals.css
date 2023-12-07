@@ -146,6 +146,20 @@ h1 {
   text-align: center;
 }
 
+.container-cards {
+  background-color: lightgray;
+  margin: 10px;
+  padding: 20px;
+}
+
+.cart-job {
+  background-color: lightgoldenrodyellow;
+  color: blue;
+  width: 300px;
+  height: 400px;
+  margin: 30px;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
