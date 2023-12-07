@@ -25,7 +25,11 @@ export function Cuerpo() {
     <div className='cuerpo'>{/*le doy cla clase cuerpo para que tenga color la pagina */}
       <Formik className='cuerpoForm'
         validationSchema={schema}
-        onSubmit={console.log}
+        onSubmit={(values, { setSubmitting }) => {
+          console.log(values);
+          alert('Formulario enviado con éxito');
+          setSubmitting(false);
+        }}
         initialValues={{
           primerNombre: '',
           primerApellido: '',
@@ -233,6 +237,7 @@ export function Cuerpo() {
                 </Form.Control.Feedback>
               </Form.Group>
             </Row>
+
             <Button type="submit">Enviar CV</Button>
           </Form>
         )}
