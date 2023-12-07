@@ -3,12 +3,15 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Button from 'react-bootstrap/Button';
-import EstudiosImage from '../../../../public/empleos/estudios.jpg'
-import MascotaImage from '../../../../public/empleos/mascota.png'
-import RunasImage from '../../../../public/empleos/runas.png'
-import DefensasImage from '../../../../public/empleos/defensa oscura.png'
-import { useRouter } from 'next/navigation'
+import EstudiosImage from '../../../../public/empleos/estudios.jpg';
+import MascotaImage from '../../../../public/empleos/mascota.png';
+import RunasImage from '../../../../public/empleos/runas.png';
+import DefensasImage from '../../../../public/empleos/defensa oscura.png';
+import { useRouter } from 'next/navigation';
 import Accordion from 'react-bootstrap/Accordion';
+import PosimasImage from '../../../../public/empleos/imagen1.png';
+import HistoriaImage from '../../../../public/empleos/Historia.jpg';
+import HerbologiaImage from '../../../../public/empleos/imagen2.jpg';
 
 export const Body = () => {
   const router = useRouter(); {/*funcion para llamar al router */ }
@@ -17,7 +20,7 @@ export const Body = () => {
     router.push("/curriculum")
   }
   return (
-    <section className='cuerpo'>
+    <div className='cuerpo'>
       <CardGroup>
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src={RunasImage.src} />
@@ -79,6 +82,53 @@ export const Body = () => {
           </Card.Body>
         </Card>
       </CardGroup>
-    </section>
+
+      <CardGroup>
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src={HistoriaImage.src} />
+          <Card.Body>
+            <Accordion defaultActiveKey="0" flush>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>Historia de la Magia</Accordion.Header>
+                <Accordion.Body>
+                  Historia de la Magia es impartida desde el primer año hasta el quinto, y es completada con un examen TIMO con solamente una parte escrita. También cuenta con la opción de continuarla en las clases de E.X.T.A.S.I.S. de sexto y séptimo.
+                  <small className="text-muted">cargado hace 2 semanas<Button onClick={goFormulario} variant="success" size="sm">Cargar CV</Button></small>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </Card.Body>
+        </Card>
+
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src={PosimasImage.src} />
+          <Card.Body>
+            <Accordion defaultActiveKey="0" flush>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>Pociones</Accordion.Header>
+                <Accordion.Body>
+                  En esta clase, los estudiantes aprenden cómo preparar pociones. Siguiendo recetas específicas y usando diferentes ingredientes mágicos para crearlas, empezando primero por los más sencillos y después usando otros más avanzados a medida que se progresa en el conocimiento.
+                  <small className="text-muted">cargado hace 2 horas<Button onClick={goFormulario} variant="success" size="sm">Cargar CV</Button></small>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </Card.Body>
+        </Card>
+
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src={HerbologiaImage.src} />
+          <Card.Body>
+            <Accordion defaultActiveKey="0" flush>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>Herbologia</Accordion.Header>
+                <Accordion.Body>
+                La Herbología es una clase y asignatura básica que se enseña en el Colegio, en la que los estudiantes aprenden a cuidar y utilizar las plantas, aprender sobre sus propiedades mágicas y para qué se utilizan. Muchas plantas proporcionaban ingredientes para pociones y medicinas, mientras que otras tenían efectos mágicos por derecho propio.
+                  <small className="text-muted">cargado hace 2 horas<Button onClick={goFormulario} variant="success" size="sm">Cargar CV</Button></small>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </Card.Body>
+        </Card>
+      </CardGroup>
+    </div>
   )
 }
